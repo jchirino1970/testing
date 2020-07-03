@@ -1,0 +1,15 @@
+{
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+          "serverId": "BF41A1F2-AWpnxvPyYHH5F-6Qe1sH",
+           "serverUrl": "http://localhost:9000",
+          "token": "f3e867c4ce5a6e84373b135fb23b36c9aa150d28 "
+        }
+      ],
+
+      "sonarlint.connectedMode.project": {
+        "projectKey": "testing"
+      },
+      "git.ignoreLimitWarning": true,
+     
+}
