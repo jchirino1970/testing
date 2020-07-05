@@ -28,33 +28,36 @@ module.exports = function (config) {
             functions: 100
           } 
       },
+      sonarqubeReporter: {
+        basePath: 'src/app',
+        outputFolder: 'reports',
+        filePattern: '**/*spec.ts',
+        encoding: 'utf-8',
+        legacyMode: false,
+        reportName: (metadat)=>{
+          return metadat.concat('xml').join('.');
+        }
+      },
       angularCli: {
         environment: 'dev'
       },
-    sonarqubeReporter: {
-      basePath: 'src/app',
-      outputFolder: 'reports',
-      filePattern: '**/*spec.ts',
-      encoding: 'utf-8',
-      legacyMode: false,
-      reportName: (metadat)=>{
-        return metadat.concat('xml').join('.');
-      }
-    },
-    reporters: ['progress', 'kjhtml', 'sonarqube'],
+      reporters: config.angularCli && config.angularCli.codeCoverage
+      ? ['progress', 'coverage-istanbul']
+      : ['progress', 'kjhtml','sonarqube'],
+    //reporters: ['progress', 'kjhtml', 'sonarqube'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    customLaunchers: {
+    /* customLaunchers: {
       ChromeHeadlessCI: {
           base: 'ChromeHeadless',
           flags: ['--no-sandbox']
       }
 
-    },  
-    singleRun: true,
+    },   */
+    singleRun: false,
     restartOnFileChange: true
   });
 };
