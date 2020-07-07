@@ -52,11 +52,12 @@ module.exports = function (config) {
     browsers: ['Chrome'],
     customLaunchers: {
       ChromeHeadlessCI: {
-          base: 'ChromeHeadless',
-          flags: ['--no-sandbox']
+          base: 'Chrome',
+          flags: [ '--headless','--disable-gpu','--no-sandbox', '--remote-debugging-port=9222']
       }
 
     },   
+    browsers: ['ChromeHeadless'],
     singleRun: true,
     restartOnFileChange: true
   });
