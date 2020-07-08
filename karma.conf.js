@@ -58,6 +58,8 @@ module.exports = function (config) {
 
     },   
     browsers: ['ChromeHeadless'],
+    captureTimeout: 100000,
+    browserNoActivityTimeout: 100000,
     singleRun: true,
     restartOnFileChange: true
   });

@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "sonar": "sonar-scanner",
     "test:ci": "ng test --no-watch --code-coverage --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,6 +24,7 @@
     "@angular/router": "~10.0.0",
     "rxjs": "~6.5.5",
     "rxjs-compat": "^6.6.0",
+    "sonar-scanner": "^3.1.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
