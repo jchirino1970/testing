@@ -49,17 +49,15 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    customLaunchers: {
+    /* customLaunchers: {
       ChromeHeadlessCI: {
           base: 'Chrome',
           flags: [ '--headless','--disable-gpu','--no-sandbox', '--remote-debugging-port=9222']
       }
 
-    },   
-    browsers: ['ChromeHeadless'],
-    captureTimeout: 100000,
-    browserNoActivityTimeout: 100000,
-    singleRun: true,
+    },    */
+    browsers: ['Chrome'],
+    singleRun: false,
     restartOnFileChange: true
   });
 };
