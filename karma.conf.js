@@ -22,10 +22,10 @@ module.exports = function (config) {
           reports: ['html', 'lcovonly', 'text-summary'],
           fixWebpackSourcePaths: true,
           thresholds: {
-            statements: 90,
-            lines: 90,
-            branches: 90,
-            functions: 90
+            statements: 60,
+            lines: 60,
+            branches: 60,
+            functions: 60
           } 
       },
       sonarqubeReporter: {
@@ -49,14 +49,14 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    /* customLaunchers: {
+    customLaunchers: {
       ChromeHeadlessCI: {
           base: 'Chrome',
           flags: [ '--headless','--disable-gpu','--no-sandbox', '--remote-debugging-port=9222']
       }
 
-    },    */
-    browsers: ['Chrome'],
+    },    
+    browsers: ['Chrome','ChromeHeadless'],
     singleRun: true,
     restartOnFileChange: true
   });

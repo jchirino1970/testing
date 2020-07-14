@@ -1,43 +1,54 @@
 <?xml version='1.0'?>
 <testExecutions version='1'>
-    <file path='src/app/TBasicas/numeros/numeros.spec.ts'>
-        <testCase name='Pruebas básicas de números Debe retornar 300, si el nro ingresado es mayor a 300' duration='4'/>
-        <testCase name='Pruebas básicas de números Debe retornar el nro ingresado +1, si el nro ingresado no es mayor a 300' duration='1'/>
-    </file>
-    <file path='src/app/intermedio/espias/medicos.component.spec.ts'>
-        <testCase name='MedicosComponent El metodo agregar es llamado' duration='6'/>
-        <testCase name='MedicosComponent Si falla agregarMedico, la propiedad mensajeError, debe ser igual al error' duration='1'/>
-        <testCase name='MedicosComponent Init: Debe cargar los médicos' duration='1'/>
-        <testCase name='MedicosComponent Se agrega un medico' duration='1'/>
-        <testCase name='MedicosComponent Se llama al servicio para borrar un médico' duration='2'/>
-    </file>
-    <file path='src/app/TBasicas/string/string.spec.ts'>
-        <testCase name='Pruebas básicas de String Debe regresar un String' duration='3'/>
-        <testCase name='Pruebas básicas de String Debe contener  la dirección' duration='1'/>
-    </file>
-    <file path='src/app/app.component.spec.ts'>
-        <testCase name='AppComponent should create the app' duration='246'/>
-        <testCase name='AppComponent El valor de myVar debe ser Hola Mundo' duration='6'/>
-    </file>
     <file path='src/app/TBasicas/clases/clase.spec.ts'>
-        <testCase name='Pruebas de clases Debe retornar 0 hp, si el fuboilista recibe 100 de danio o más' duration='2'/>
-        <testCase name='Pruebas de clases Debe retornar 80 hp, si el fuboilista recibe 20 de danio' duration='1'/>
-        <testCase name='Pruebas de clases Debe retornar 70 hp, si el fuboilista recibe 50 de danio' duration='2'/>
-    </file>
-    <file path='src/app/TBasicas/arreglos/arrreglos.spec.ts'>
-        <testCase name='Pruebas de arreglos Debe existir  SuperMan y Nemo' duration='4'/>
-        <testCase name='Pruebas de arreglos Debe retornar al menos 3 peliculas' duration='1'/>
+        <testCase name='Pruebas de clases Debe retornar 80 hp, si el fuboilista recibe 20 de danio' duration='7'/>
+        <testCase name='Pruebas de clases Debe retornar 70 hp, si el fuboilista recibe 50 de danio' duration='1'/>
+        <testCase name='Pruebas de clases Debe retornar 0 hp, si el fuboilista recibe 100 de danio o más' duration='1'/>
     </file>
     <file path='src/app/TBasicas/booleanos/booleanos.spec.ts'>
-        <testCase name='Pruebas básicas de Booleanos Debe regresar true' duration='1'/>
+        <testCase name='Pruebas básicas de Booleanos Debe regresar true' duration='2'/>
+    </file>
+    <file path='src/app/TBasicas/arreglos/arrreglos.spec.ts'>
+        <testCase name='Pruebas de arreglos Debe existir  SuperMan y Nemo' duration='3'/>
+        <testCase name='Pruebas de arreglos Debe retornar al menos 3 peliculas' duration='1'/>
+    </file>
+    <file path='src/app/intermedio/espias/medicos.component.spec.ts'>
+        <testCase name='MedicosComponent Si falla agregarMedico, la propiedad mensajeError, debe ser igual al error' duration='7'/>
+        <testCase name='MedicosComponent Se llama al servicio para borrar un médico' duration='2'/>
+        <testCase name='MedicosComponent Init: Debe cargar los médicos' duration='2'/>
+        <testCase name='MedicosComponent Se agrega un medico' duration='1'/>
+        <testCase name='MedicosComponent El metodo agregar es llamado' duration='2'/>
+    </file>
+    <file path='src/app/app.component.spec.ts'>
+        <testCase name='AppComponent Debe retornar FALSE' duration='9'/>
+        <testCase name='AppComponent El valor de myVar debe ser Hola Mundo' duration='4'/>
+        <testCase name='AppComponent Debe retornar TRUE' duration='3'/>
+        <testCase name='AppComponent should create the app' duration='302'/>
+        <testCase name='AppComponent La variable saludo debe contener Jhonatan' duration='37'/>
+    </file>
+    <file path='src/app/TBasicas/string/string.spec.ts'>
+        <testCase name='Pruebas básicas de String Debe regresar un String' duration='0'/>
+        <testCase name='Pruebas básicas de String Debe contener  la dirección' duration='5'/>
+    </file>
+    <file path='src/app/TBasicas/numeros/numeros.spec.ts'>
+        <testCase name='Pruebas básicas de números Debe retornar el nro ingresado +1, si el nro ingresado no es mayor a 300' duration='1'/>
+        <testCase name='Pruebas básicas de números Debe retornar 300, si el nro ingresado es mayor a 300' duration='2'/>
+    </file>
+    <file path='src/app/services/user.service.spec.ts'>
+        <testCase name='AppComponent Debe ser creado el Servicio' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
+        <testCase name='AppComponent Debe retornar un Observable&lt;User[]>' duration='0'>
+            <skipped message='TestCase skipped'/>
+        </testCase>
     </file>
     <file path='src/app/intermedio/formularios/formulario.spec.ts'>
-        <testCase name='Formularios Se debe crear un formulario con dos campos, email y password' duration='3'/>
-        <testCase name='Formularios El campo email debe ser valido' duration='2'/>
-        <testCase name='Formularios El campo email es obligatorio' duration='1'/>
+        <testCase name='Formularios El campo email debe ser valido' duration='6'/>
+        <testCase name='Formularios Se debe crear un formulario con dos campos, email y password' duration='1'/>
+        <testCase name='Formularios El campo email es obligatorio' duration='2'/>
     </file>
     <file path='src/app/intermedio/eventEmitter/futbolista2.spec.ts'>
-        <testCase name='Fubolista 2 Emit Debe emitir un evento cuando recibe danio y sobrevivir si es menor de 100' duration='0'/>
-        <testCase name='Fubolista 2 Emit Debe emitir un evento cuando recibe danio' duration='4'/>
+        <testCase name='Fubolista 2 Emit Debe emitir un evento cuando recibe danio' duration='15'/>
+        <testCase name='Fubolista 2 Emit Debe emitir un evento cuando recibe danio y sobrevivir si es menor de 100' duration='1'/>
     </file>
 </testExecutions>
