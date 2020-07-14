@@ -22,10 +22,10 @@ module.exports = function (config) {
           reports: ['html', 'lcovonly', 'text-summary'],
           fixWebpackSourcePaths: true,
           thresholds: {
-            statements: 100,
-            lines: 100,
-            branches: 100,
-            functions: 100
+            statements: 90,
+            lines: 90,
+            branches: 90,
+            functions: 90
           } 
       },
       sonarqubeReporter: {
