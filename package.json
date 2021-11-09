@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "react-scripts --openssl-legacy-provider starte",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "ng test",
     "sonar": "sonar-scanner",  
     "test:ci": "ng test --no-watch --code-coverage --browsers=ChromeHeadlessCI",
